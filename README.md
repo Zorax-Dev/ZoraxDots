@@ -36,3 +36,14 @@
 | Super + E         | File manager        |
 | Super + B         | Waybar Switcher     |
 | Super + L         | Wallpaper switcher  |
+
+### Workspace Related Keybinds 
+
+| Keybinding                  | Action                           |
+|-----------------------------|----------------------------------| 
+| Super +(any number)         | switch between workspace         |
+| Super + shift + (any number)| move tabs between workspaces     |
+| Super + S                   | special workspace                |
+| Super + shift + S           | move tabs to special workspaces  |
+
+
