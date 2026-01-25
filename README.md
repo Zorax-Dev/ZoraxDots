@@ -3,8 +3,6 @@
 
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/0dbd4813-59c6-4171-b7bf-46f933337924" />
 
-[Wallpapers 1](https://github.com/sleepycathey/CozyPixels) [Wallpapers 2](https://github.com/krishna4a6av/Wallpapers)
-
 ## pakages used 
 - waybar
 - swaync
