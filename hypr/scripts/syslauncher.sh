@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+if pgrep -x rofi >/dev/null; then
+  pkill rofi
+  exit 0
+fi
+
+
 ROFI_CONFIG="$HOME/.config/rofi/sl.rasi"
 
 # --- Define menu options (no icons) ---
@@ -9,7 +15,7 @@ MENU_ITEMS=(
     "󱓞   Rofi Layout"
     "󰸉   Wallpaper Switcher"
     "   Clipboard"
-    "   Capture"
+    "󰆧   Tools"
 )
 
 # --- Show rofi menu ---
@@ -31,8 +37,8 @@ case "$SELECTED" in
     "   Clipboard")
         "$HOME/.config/hypr/scripts/clip.sh"
         ;;
-    "   Capture")
-		"$HOME/.config/hypr/scripts/screenshotrofi.sh"
+    "󰆧   Tools")
+		"$HOME/.config/hypr/scripts/tools.sh"
 		;;
     *)
         echo "Unknown option: $SELECTED"

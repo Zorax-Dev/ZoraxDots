@@ -1,4 +1,5 @@
 @import "colors.rasi"
+@import "sl.rasi"
 
 configuration {
     show-icons: false;
@@ -17,11 +18,12 @@ configuration {
 
 /* WINDOW */
 window {
-    width: 420px;
+    width: 25%;
+    background: transparent;
     background-color: @bg;
     border: 1px;
     border-color: @primary-fixed-dim;
-    border-radius: 16px;
+    border-radius: 20px;
 }
 
 /* MAIN */
@@ -33,11 +35,11 @@ mainbox {
 /* INPUT BAR */
 inputbar {
     enabled: true;
-    padding: 8px 12px;
+    padding: 18px 12px;
     background-color: #000000ee;
     border: 1px;
-    border-color: @bordercol;
-    border-radius: 12px;
+    border-color: @primary-fixed-dim;
+    border-radius: 16px;
 }
 
 /* ❌ REMOVE PROMPT TEXT COMPLETELY */
@@ -50,7 +52,7 @@ prompt {
 entry {
     background-color: transparent;
     text-color: @fg;
-    placeholder: "Enter file name (no .mp4)";
+    placeholder: "Enter file name";
     cursor: text;
     cursor-color: #ffffff;
     cursor-width: 1px;
