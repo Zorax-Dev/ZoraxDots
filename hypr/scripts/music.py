@@ -1,3 +1,4 @@
+# credit :- https://github.com/aadritobasu/kenso-dots 
 #!/usr/bin/env python3
 import gi, subprocess, threading, time, urllib.request, os, hashlib, socket, sys
 from pathlib import Path
