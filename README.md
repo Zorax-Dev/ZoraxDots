@@ -1,16 +1,27 @@
-# ZoraxDots
-- **A well made Asthetic Config Files**
+<p align="center">
+  <img src="assets/hyprkai.png" width="300" />
+</p>
 
-## Suported WM
-- [Hyprland](https://github.com/hyprwm/Hyprland)
-- [Mangowc](https://github.com/DreamMaoMao/mangowc) - support currently removed !
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=800&size=21&pause=1000&color=9B3BBC&center=true&width=435&lines=FEATURES" alt="Typing SVG" /></a>
 
-## Showcase
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/0e5c72f8-ea12-43d3-a56f-d29488ce41d7" />
+<div align="center"><table><tr>Wallpaper select</tr><tr><td>
+<img src="Screenshots/style/wallpaperset1.png"/></td><td>
+<img src="Screenshots/style/wallpaperset2.png"/></td></tr></table></div>
 
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/e392d58d-c601-43c0-9011-f520cfd42f65" />
+---
+<div align="center"><table><tr><td>Tools</td><td>Waybar select</td></tr><tr><td>
+<img src="Screenshots/style/tools.png"/></td><td>
+<img src="Screenshots/style/waybarswitch.png"/></td></tr>
+<tr><td>Media player</td><td>App launcher</td></tr><tr><td>
+<img src="Screenshots/style/musicplayer.png"/></td><td>
+<img src="Screenshots/style/applauncher.png"/></td></tr>
+</table></div>
 
-<img width="1920" height="1073" alt="Image" src="https://github.com/user-attachments/assets/aefe7de8-cc22-42f9-adf6-71af9052f624" />
+
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=800&size=21&pause=1000&color=9B3BBC&center=true&width=435&lines=INSTALLATION+GUIDE" alt="Typing SVG" />
+
+soon
 
 <a id="installation"></a>
 <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=CCA9DD&vCenter=true&width=435&height=25&lines=INSTALLATION" width="450"/>
@@ -42,6 +53,17 @@
 | Super + Shift + S | Screenshot |
 
 
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=800&size=21&pause=1000&color=9B3BBC&center=true&width=435&lines=SCREENSHOTS" alt="Typing SVG" /></a>
+
+<p align="center">
+  <img src="Screenshots/image4.png" width="90%" />
+</p>
+<p align="center">
+  <img src="Screenshots/image2.png" width="90%" />
+</p>
+<p align="center">
+  <img src="Screenshots/image1.png" width="90%" />
+</p>
 
 ---
 
