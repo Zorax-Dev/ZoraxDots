@@ -48,11 +48,6 @@ Some files in this repository are adapted from **HyprKenso Dotfiles**
 by Aadrito Basu.
 
 Files used:
-- music.py
-- sl.rasi
-- ce.rasi
-- ts.rasi
-- wlogout.sh
 - syslauncher.sh
 - hyprlock.sh
 - hyprlock.conf
