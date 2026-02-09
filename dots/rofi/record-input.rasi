@@ -1,5 +1,5 @@
 @import "colors.rasi"
-@import "sl.rasi"
+@import "launch.rasi"
 
 configuration {
     show-icons: false;

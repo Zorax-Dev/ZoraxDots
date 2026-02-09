@@ -1,0 +1,160 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin-top": 4,
+
+  "modules-center": [
+    "clock",
+    "custom/media",
+    "hyprland/workspaces",
+    "pulseaudio",
+    "network",
+    "battery",
+  ],
+
+  "custom/pacman": {
+    "format": " {}   ",
+    "interval": "once",
+    "exec": "checkupdates | wc -l",
+    "on-click": "update-system",
+    "signal": 8,
+  },
+  "custom/media": {
+    "exec": "/usr/bin/python3 /home/zorax/.config/waybar/scripts/mediaplayer.py",
+    "return-type": "json",
+    "exec-once": true,
+
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl stop",
+
+    "max-length": 40,
+  },
+  "custom/notification": {
+    "tooltip": true,
+    "format": "<span size='16pt'>{icon}</span>",
+    "format-icons": {
+      "notification": "󱅫",
+      "none": "󰂜",
+      "dnd-notification": "󰂠",
+      "dnd-none": "󰪓",
+      "inhibited-notification": "󰂛",
+      "inhibited-none": "󰪑",
+      "dnd-inhibited-notification": "󰂛",
+      "dnd-inhibited-none": "󰪑",
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true,
+  },
+  "custom/menu": {
+    "format": "{}",
+    "exec": "echo ; echo 󱓟 app launcher",
+    "interval": 86400, // once every day
+    "tooltip": false,
+    "on-click": "pkill wofi || wofi --show drun",
+  },
+  "battery": {
+    "interval": 60,
+    "states": { "warning": 30, "critical": 15 },
+    "format": "{icon}",
+    "format-charging": "",
+    "format-icons": ["", "", "", "", "", "", "", "", "", "", ""],
+    "on-click-right": "kitty -e sudo powertop",
+  },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "interval": 1,
+    "tooltip": false,
+  },
+
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": false,
+    "on-click": "wlogout",
+  },
+  "pulseaudio": {
+    "format": "{icon}",
+    "format-muted": " ",
+    "format-icons": {
+      "default": ["", "", " "],
+    },
+    "tooltip": false,
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+  },
+
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": "",
+    },
+  },
+
+  "network": {
+    "tooltip": true,
+    "format-wifi": "{icon}",
+    "format-icons": ["󰤟", "󰤢", "󰤥"],
+    "rotate": 0,
+    "format-ethernet": "󰈀",
+    "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>",
+    "format-linked": "󰈀",
+    "format-disconnected": "",
+    "tooltip-format-disconnected": "Disconnected",
+    "on-click": "/usr/local/bin/ags -t ControlPanel",
+    "interval": 2,
+  },
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "一",
+      "2": "二",
+      "3": "三",
+      "4": "四",
+      "5": "五",
+      "6": "六",
+      "7": "七",
+      "8": "八",
+      "9": "九",
+      "10": "十",
+    },
+    "persistent-workspaces": {
+      "*": 5, // 5 workspaces by default on every monitor
+      "HDMI-A-1": 3, // but only three on HDMI-A-1
+    },
+  },
+
+  "ext/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "一",
+      "2": "二",
+      "3": "三",
+      "4": "四",
+      "5": "五",
+      "6": "六",
+      "7": "七",
+      "8": "八",
+      "9": "九",
+      "10": "十",
+    },
+    "persistent-workspaces": {
+      "*": 5, // 5 workspaces by default on every monitor
+      "HDMI-A-1": 3, // but only three on HDMI-A-1
+    },
+  },
+
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon} {percent}%",
+    "format-icons": ["󰃞", "󰃟", "󰃠"],
+  },
+}

@@ -7,7 +7,7 @@ if pgrep -x rofi >/dev/null; then
 fi
 
 
-ROFI_CONFIG="$HOME/.config/rofi/sl.rasi"
+ROFI_CONFIG="$HOME/.config/rofi/launch.rasi"
 
 # --- Define menu options (no icons) ---
 MENU_ITEMS=(
@@ -33,9 +33,6 @@ case "$SELECTED" in
         ;;
     "󰸉   Wallpaper Switcher")
         "$HOME/.config/hypr/scripts/wallpaper-picker.sh"
-        ;;
-    "   Clipboard")
-        "$HOME/.config/hypr/scripts/clip.sh"
         ;;
     "󰆧   Tools")
 		"$HOME/.config/hypr/scripts/tools.sh"

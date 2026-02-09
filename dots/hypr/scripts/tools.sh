@@ -32,7 +32,7 @@ choice=$(printf '%s\n' "${options[@]}" | \
 rofi -dmenu \
   -no-config \
   -selected-row "$DEFAULT_ROW" \
-  -theme ~/.config/rofi/sl.rasi)
+  -theme ~/.config/rofi/launch.rasi)
 
 # Exit if no choice is made (e.g., pressing Esc)
 [[ -z "$choice" ]] && exit 1
@@ -53,7 +53,7 @@ sleep 0.2
 # Execute corresponding command
 case "$choice" in
     " 󰄀    Region Screenshot")
-        grim -g "$(slurp)" - | satty --early-exit --action-on-enter save-to-file --right-click-copy --filename - --output-filename ~/Pictures/screenshots/$(date '+%y-%d:%m-%H:%M').png
+        grim -g "$(slurp)" - | satty --early-exit --action-on-enter save-to-file --right-click-copy --filename - --output-filename /home/zorax/Pictures/Screenshots/$(date '+%y-%d:%m-%H:%M').png
         ;;
     "     Screen Recording (no audio)")
          FILE=$(ask_filename)

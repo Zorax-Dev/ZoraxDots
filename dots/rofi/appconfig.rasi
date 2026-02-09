@@ -30,14 +30,14 @@ window {
     cursor:                     "default";
     spacing:                    0px;
     border:                     1px;
-    border-color:               @primary;
+    border-color:               @outline;
     border-radius:              30px;
     location:                   center;
     anchor:                     center;
 
     // Style Values
     width:                      50%;
-    background-color: rgba(0, 0, 0, 0.90);
+    background-color: @surface;
         
 }
 
